@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cherry test website">
+    <title>Cherry</title>
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/app.min.js" defer></script>
+  </head>
+  <body>
+    <div class="hide-f-m">
+      <div class="cookies-bar">
+        <div class="container flex flex-j-b flex-a-c">
+          <div class="flex flex-a-c ">
+            <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus.</p>
+            <a href="#">Vitae ullamcorper metus</a>
+          </div>
+          <div>
+            <button class="btn-cherry">Agree</button>
+            <button id="cookies-bar-close" class="btn-cherry">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <!-- START OF MOBILE HEADER -->
+    <header>
+      <div class="header-mobile flex flex-j-b flex-a-c hide-f-d">
+        <div>
+          <a href="/"><img class="logo" src="img/logo.svg" alt="Logo" /></a>
+        </div>
+        <div class="navbar-mobile">
+          <button class="three-dots-icon" aria-label="Menu button" type="button">
+            <svg
+              width="8"
+              height="32"
+              fill="#d41217"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="4" cy="4" r="4" />
+              <circle cx="4" cy="16" r="4" />
+              <circle cx="4" cy="28" r="4" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu-overlay">
+        <div class="mobile-menu-header flex flex-j-b flex-a-c">
+          <a href="/"><img class="logo" src="img/logo.svg" alt="Logo" /></a>
+          <div class="flex flex-a-c">
+            <button class="btn-lang">ENG &#9662</button>
+            <button class="btn-close" type="button">
+             <img src="img/close-x.svg" alt="Close">
+            </button>
+          </div>
+        </div>
+        <div class="mobile-menu-search flex flex-a-c">
+          <span class="mobile-search-icon">
+            <img src="img/search-cherry.svg" alt="">
+          </span>
+          <input class="mobile-menu-search-input" type="text" placeholder="Lorem ipsum">
+        </div>
+        <div class="flex flex-col">
+          <button class="accordion flex flex-j-b">About Cherry<span><img src="img/plus-icon.svg" alt=""></span></button>
+          <div class="panel">
+            <div class="mobile-acc-links">
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+            </div>
+          </div>
+
+          <button class="accordion flex flex-j-b">Business areas<span><img src="img/plus-icon.svg" alt=""></span></button>
+          <div class="panel">
+            <div class="mobile-acc-links">
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+            </div>
+          </div>
+
+          <button class="accordion flex flex-j-b">Corporate governance<span><img src="img/plus-icon.svg" alt=""></span></button>
+          <div class="panel">
+            <div class="mobile-acc-links">
+              <a href="#">General Meeting</a>
+              <a href="#">Annual General Meeting 2017</a>
+              <a href="#">Nomination committee</a>
+              <a class="inside-accordion flex flex-j-b">Boards of Directors<span><img src="img/plus-icon.svg" alt=""></span></a>
+              <div class="panel">
+                <div class="inside-acc-links flex flex-col">
+                  <a class="inside-acc-link" href="#">Work of the board</a>
+                  <a href="#">Committees</a>
+                  <a href="#">Remuneration of the board</a>
+                </div>
+              </div>
+              <a href="#">Management Team</a>
+              <a href="#">Auditors</a>
+              <a href="#">Remunerations</a>
+              <a href="#">Incentive programs</a>
+              <a href="#">Internal control</a>
+              <a href="#">Minutes General Meeting</a>
+              <a href="#">Articles of Association</a>
+            </div>
+          </div>
+          <button class="accordion flex flex-j-b">Investors<span><img src="img/plus-icon.svg" alt=""></span></button>
+          <div class="panel">
+            <div class="mobile-acc-links">
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+            </div>
+          </div>
+          <button class="accordion flex flex-j-b">Media<span><img src="img/plus-icon.svg" alt=""></span></button>
+          <div class="panel">
+            <div class="mobile-acc-links">
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+            </div>
+          </div>
+          <button class="accordion flex flex-j-b">Career<span><img src="img/plus-icon.svg" alt=""></span></button>
+          <div class="panel">
+            <div class="mobile-acc-links">
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+            </div>
+          </div>
+          <button class="accordion flex flex-j-b">Contact<span><img src="img/plus-icon.svg" alt=""></span></button>
+          <div class="panel">
+            <div class="mobile-acc-links">
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+              <a href="#">Lorem ipsum</a>
+            </div>
+          </div>
+            </div>
+          </div>
+      <!-- END OF MOBILE HEADER -->
+      <!-- START OF DESKTOP HEADER -->
+      <div class="header-bg hide-f-m">
+        <div class="header-border">
+          <div class="header-up">
+            <div class="logo">
+              <a class="logo" href="#"
+                ><img src="img/logo.svg" alt="Logo"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-down flex flex-a-c flex-j-b">
+          <nav class="nav-left">
+            <ul class="flex">
+              <li><a href="#">About Cherry</a></li>
+              <li><a href="#">Business areas</a></li>
+              <li>
+                <a class="mega-menu-item" href="#">Corporate governance &#9662</a>
+                <div class="mega-menu">
+                  <div class="mega-container flex flex-j-b">
+                    <h4>Corporate governance</h4>
+                    <div class="flex flex-col">
+                      <a href="#">General Meeting</a>
+                      <a href="#">Annual General Meeting 2017</a>
+                      <a href="#">Nomination committee</a>
+                    </div>
+                    <div class="flex flex-col">
+                      <a href="#">Boards of Directors</a>
+                      <a href="#">Work of the board</a>
+                      <a href="#">Committees</a>
+                      <a href="#">Remuneration of the board</a>
+                    </div>
+                    <div class="flex flex-col">
+                      <a href="#">Management Team</a>
+                      <a href="#">Auditors</a>
+                      <a href="#">Remunerations</a>
+                      <a href="#">Incentive programs</a>
+                    </div>
+                    <div class="flex flex-col">
+                      <a href="#">Internal control</a>
+                      <a href="#">Minutes General Meeting</a>
+                      <a href="#">Articles of Association</a>
+                    </div>
+                  </div>         
+              </div>
+              </li>     
+              <li><a href="#">Investors</a></li>
+              <li><a href="#">Media</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="nav-right flex flex-a-c">
+            <h6>CHER B: 59.50 SEK +1.75</h6>
+            <div class="dropdown-lang">
+              <button class="btn-lang">ENG &#9662</button>
+              <div class="dropdown-content">
+                <a href="#">EN</a>
+                <a href="#">EE</a>
+                <a href="#">RU</a>
+              </div>
+            </div>
+            <div class="search">
+              <button class="btn-search" aria-label="Search" />
+              <div class="search-box">
+                <div class="search-container flex flex-a-c">
+                  <input class="search-field" type="text" placeholder="Lorem ipsum">
+                  <input class="search-button" type="button" value="Search">
+                </div>
+                </div>       
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END OF HEADER -->
+    <section class="hero">
+      <div class="carousel-container first-active">
+        <div class="carousel-img flex flex-a-c flex-j-c">
+          <h1 class="first-slide-text">Lorem ipsum dolor sit amet</h1>
+        </div>
+        <div class="carousel-img carousel-video">
+          <video src="img/hero-video.mp4" poster="img/hero-2.jpg" class="carousel-video-file"></video>
+          <div class="video-control">
+            <img class="play-button" src="img/play-button.svg" alt="Play Button">
+            <input class="progress-bar" value="0" min="0" max="100" type="range" name="progress-bar">
+          </div>
+        </div>
+        <div class="carousel-img flex flex-a-c flex-j-c">
+          <h1 class="first-slide-text">Maecenas cursus euismod aliquam, sed molestie rhoncus</h1>
+        </div>
+        <div class="carousel-img flex flex-a-c flex-j-c">
+          <h1 class="first-slide-text">Duis vitae nulla consequat, tincidunt ex sit amet, maximus nunc</h1>
+        </div>
+        <div class="carousel-img flex flex-a-c flex-j-c">
+          <h1 class="first-slide-text">Sed interdum lorem nec velit fermentum mollis</h1>
+        </div>  
+      </div>
+      <div class="carousel-nav first-current">
+        <span class="carousel-dot" id="dot-1"></span>
+        <span class="carousel-dot" id="dot-2"></span>
+        <span class="carousel-dot" id="dot-3"></span>
+        <span class="carousel-dot" id="dot-4"></span>
+        <span class="carousel-dot" id="dot-5"></span>
+      </div>
+    </section>
+    <!-- START OF CARDS SECTION -->
+    <section class="cards ">
+      <div class="flex flex-col card-purple flex-j-b">
+        <div>
+          <h2>Press Releases</h2>
+          <article>
+            <h5>July 10, 2017</h5>
+            <h3>PM 1 lorem ipsum dolor sit</h3>
+          </article>
+          <article>
+            <h5>July 10, 2017</h5>
+            <h3>PM 2 lorem ipsum dolor lorem ipsum sit amet Lorem ipsum</h3>
+          </article>
+          <article>
+            <h5>July 10, 2017</h5>
+            <h3>PM 3 lorem ipsum dolor sit amet</h3>
+          </article>
+          <article>
+            <h5>July 10, 2017</h5>
+            <h3>PM 3 lorem ipsum dolor sit amet</h3>
+          </article>
+        </div>
+
+        <button type="button" class="btn-white">Lorem ipsum</button>
+      </div>
+      <!-- END OF CARD ONE -->
+      <div class="flex flex-col card-orange flex-j-b">
+        <div>
+          <h2>Calendar</h2>
+          <article>
+            <h5>July 10, 2017</h5>
+            <h3>Event 1 lorem ipsum dolor sit</h3>
+          </article>
+          <article>
+            <h5>July 10, 2017</h5>
+            <h3>Event 2 lorem ipsum dolor lorem ipsum sit amet</h3>
+          </article>
+          <article>
+            <h5>July 10, 2017</h5>
+            <h3>Event 3 lorem ipsum dolor sit</h3>
+          </article>
+          <article>
+            <h5>July 10, 2017</h5>
+            <h3>PM 3 lorem ipsum dolor sit amet</h3>
+          </article>
+        </div>
+        <button type="button" class="btn-white">Lorem ipsum</button>
+      </div>
+      <!-- END OF CARD TWO -->
+      <div class="flex flex-col card-green flex-j-b">
+        <div>
+          <h2>Cherry Interrim Report</h2>
+          <p>
+            Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In
+            malesuada enim in dolor euismod.
+          </p>
+          <div class="card-links flex flex-col">
+            <a class="flex flex-a-c" href="#"
+              ><span><img src="img/pdf.png" alt="Icon" /></span>Report Q2
+              2017</a
+            >
+            <a class="flex flex-a-c" href="#"
+              ><span><img src="img/pdf.png" alt="Icon" /></span
+              >Presentation Q2 2017</a
+            >
+            <a class="flex flex-a-c" href="#"
+              ><span><img src="img/pdf.png" alt="Icon" /></span>Webcast
+              Q2 2017</a
+            >
+            <a class="flex flex-a-c" href="#"
+              ><span><img src="img/pdf.png" alt="Icon" /></span>Financial
+              data Q2 2017</a
+            >
+          </div>
+        </div>
+        <button type="button" class="btn-white">Lorem ipsum</button>
+      </div>
+      <!-- END OF CARD THREE -->
+      <div class="flex flex-col card-cherry flex-j-b">
+        <div class="card-info flex flex-col">
+          <h1>The Share</h1>
+          <h2>NASDAQ OMXS (CHER B):</h2>
+          <span>
+            59.50 SEK<br />
+            +1.75%
+          </span>
+        </div>
+        <button type="button" class="btn-white">Lorem ipsum</button>
+      </div>
+      <!-- END OF CARD FOUR -->
+    </section>
+    <!-- END OF CARDS SECTION -->
+    <!-- START OF CTA SECTION -->
+    <section class="cta">
+      <div class="cta-text">
+        <h1>Lorem ipsum</h1>
+        <p>
+          Cherry är ett innovativt och snabbväxande spelföretag grundat 1963
+          vars övergripande strategi är att skapa aktievärde genom att äga och
+          utveckla snabbväxande och lönsamma bolag inom spel och casino.
+        </p>
+        <p>
+          Idag bedriver Cherry sin verksamhet genom fem diversifierade
+          affärsområden, Nätspel via Cherry iGaming, Prestationsbaserad
+          Marknadsföring via Game Lounge, Spelteknologi via XCaliber,
+          Spelutveckling via Yggdrasil Gaming och Restaurangcasino via Cherry
+          Spelglädje.
+        </p>
+        <p>
+          Bolagets målsättning är att växa organiskt och genom strategiska
+          förvärv av snabbväxande företag. Cherry sysselsätter cirka 900
+          personer och har drygt 4 600 aktieägare. Bolagets B-aktie är listad på
+          AktieTorget.
+        </p>
+        <button class="btn-cherry">Lorem ipsum</button>
+      </div>
+      <img src="img/pencil-character.png" alt="Character" />
+    </section>
+    <!-- END OF CTA SECTION -->
+    <!-- START OF FEATURES SECTION -->
+    <section class="features">
+      <!-- FIRST ROW -->
+
+      <div class="feature-text feature-one-text">
+        <h2>Online Gaming</h2>
+        <p>
+          Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec
+          viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin
+          ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque
+          ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum
+          suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a
+          diam condimentum pretium. Sed sollicitudin ipsum quis nunc
+          sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu
+          varius risus, eu aliquet arcu. Donec eget massa a diam condimentum
+          pretium.
+        </p>
+      </div>
+      <img class="feature-img feature-one-img" src="img/feature1.jpg" alt="First Image" />
+
+      <!-- --- -->
+      <!-- SECOND ROW -->
+      <img class="feature-img feature-two-img" src="img/feature2.jpg" alt="Second Image" />
+      <div class="feature-text feature-two-text">
+        <h2>Restaurant Casino</h2>
+        <p>
+          Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec
+          viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin
+          ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque
+          ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum
+          suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a
+          diam condimentum pretium. Sed sollicitudin ipsum quis nunc
+          sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu
+          varius risus, eu aliquet arcu. Donec eget massa a diam condimentum
+          pretium.
+        </p>
+      </div>
+      <!-- --- -->
+      <!-- THIRD ROW -->
+      <div class="feature-text feature-three-text">
+        <h2>Game Developement</h2>
+        <p>
+          Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec
+          viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin
+          ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque
+          ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum
+          suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a
+          diam condimentum pretium. Sed sollicitudin ipsum quis nunc
+          sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu
+          varius risus, eu aliquet arcu. Donec eget massa a diam condimentum
+          pretium.
+        </p>
+      </div>
+      <img
+        class="feature-img feature-three-img"
+        src="img/feature3.jpg"
+        alt="Third Image"
+      />
+      <!-- --- -->
+      <!-- FOURTH ROW -->
+      <img
+        class="feature-img feature-four-img"
+        src="img/feature4.png"
+        alt="Fourth Image"
+      />
+      <div class="feature-text feature-four-text">
+        <h2>Performance-based Marketing</h2>
+        <p>
+          Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec
+          viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin
+          ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque
+          ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum
+          suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a
+          diam condimentum pretium. Sed sollicitudin ipsum quis nunc
+          sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu
+          varius risus, eu aliquet arcu.
+        </p>
+      </div>
+      <!-- --- -->
+      <!-- FIFTH ROW -->
+      <div class="feature-text feature-five-text">
+        <h2>Gaming Technology</h2>
+        <p>
+          Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec
+          viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin
+          ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque
+          ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum
+          suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a
+          diam condimentum pretium. Sed sollicitudin ipsum quis nunc
+          sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu
+          varius risus, eu aliquet arcu. Donec eget massa a diam condimentum
+          pretium.
+        </p>
+      </div>
+      <img class="feature-img feature-five-img" src="img/feature5.jpg" alt="Fifth Image" />
+      <!-- --- -->
+      <!-- SIXTH ROW -->
+      <img class="feature-img feature-six-img" src="img/feature6.jpg" alt="Sixth Image" />
+      <div class="feature-text feature-six-text">
+        <h2>Developement Projects</h2>
+        <p>
+          Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec
+          viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin
+          ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque
+          ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum
+          suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a
+          diam condimentum pretium. Sed sollicitudin ipsum quis nunc
+          sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu
+          varius risus, eu aliquet arcu. Donec eget massa a diam condimentum
+          pretium.
+        </p>
+      </div>
+      <!-- --- -->
+    </section>
+    <!-- END OF FEATURE SECTION -->
+    <!-- START OF SHARE SECTION -->
+    <section class="flex flex-col share">
+      <h2 class="share-heading">Share this page</h2>
+      <a href="#" class="share-btn-1">
+        <img src="img/icon-fb.svg" alt="Facebook" />
+      </a>
+      <a href="#" class="share-btn-2">
+        <img src="img/icon-tw.svg" alt="Twitter" />
+      </a>
+      <a href="#" class="share-btn-3">
+        <img src="img/icon-li.svg" alt="LinkedIn" />
+      </a>
+      <a href="#" class="share-btn-4">
+        <img src="img/icon-em.svg" alt="Email" />
+      </a>
+      <a href="#" class="share-btn-5">
+        <img src="img/icon-pr.svg" alt="Print" />
+      </a>
+    </section>
+    <!-- END OF SHARE SECTION -->
+    <!-- START OF FOOTER -->
+    <footer>
+      <div class="footer">
+        <!-- FIRST FOOTER DIV -->
+        <div class="footer-start">
+          <img src="img/logo.svg" alt="Footer Logo" />
+        </div>
+        <!-- FIRST FOOTER DIV -->
+        <!-- SECOND FOOTER DIV -->
+
+        <div class="footer-col-1">
+          <h4>About Cherry</h4>
+          <div class="flex flex-col">
+            <a href="#">Cherry in brief</a>
+            <a href="#">Cherry's history</a>
+            <a href="#">Responsible gaming</a>
+            <a href="#">Legal Structure</a>
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <h4>Business Areas</h4>
+          <div class="flex flex-col">
+            <a href="#">Online Gaming – ComeOn!</a>
+            <a href="#">Gaming Technology - XCaliber</a>
+
+            <a href="#"
+              >Game development – Yggdrasil Gaming & Highlights Games</a
+            >
+
+            <a href="#">Performance-based Marketing – Game Lounge</a>
+            <a href="#">Restaurant Casino – Cherry Spelglädje</a>
+            <a href="#">Development Projects</a>
+          </div>
+        </div>
+        <div class="footer-col-3">
+          <h4>Business Areas</h4>
+          <div class="flex flex-col">
+            <a href="#">Corporate Governance</a>
+            <a href="#">General Meeting</a>
+            <a href="#">Annual General Meeting 2017</a>
+            <a href="#">Nomination Committee</a>
+            <a href="#">Boards of Directors</a>
+            <a href="#">Management Team</a>
+            <a href="#">Auditors</a>
+            <a href="#">Remunerations</a>
+            <a href="#">Incentive Programs</a>
+            <a href="#">Internal Control</a>
+            <a href="#">Minutes General Meetings</a>
+            <a href="#">Articles of Association</a>
+          </div>
+        </div>
+        <div class="footer-col-4">
+          <h4>Investors & Media</h4>
+          <div class="flex flex-col">
+            <a href="#">The Share</a>
+            <a href="#">Financial Reports</a>
+            <a href="#">Annual Reports</a>
+            <a href="#">Largest Shareholders</a>
+            <a href="#">Financial Targets</a>
+            <a href="#">Financial Calendar</a>
+            <a href="#">Analysts</a>
+            <a href="#">Investor Contact</a>
+            <a href="#">Press Releases</a>
+            <a href="#">Subscribe</a>
+            <a href="#">Press Photos</a>
+          </div>
+        </div>
+        <div class="footer-col-5">
+          <h4>Career</h4>
+          <div class="flex flex-col">
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem ipsum</a>
+          </div>
+        </div>
+        <div class="footer-col-6">
+          <h4>Contact</h4>
+          <div class="flex flex-col">
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem ipsum</a>
+          </div>
+        </div>
+
+        <!-- SECOND FOOTER DIV -->
+        <!-- THIRD FOOTER DIV -->
+        <div class="footer-end">
+          <h5>
+            Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In
+            malesuada enim in dolor euismod.
+          </h5>
+          <a href="#">Lorem ipsum</a> <a href="#">Lorem ipsum</a>
+        </div>
+        <!-- THIRD FOOTER DIV -->
+      </div>
+    </footer>
+    <!-- END OF FOOTER -->
+  </body>
+</html>
