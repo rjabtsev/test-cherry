@@ -1,0 +1,102 @@
+.features {
+  font-weight: 600;
+  line-height: 1.25;
+
+  @include breakpoint-up(large) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+      'feature-one-text feature-one-img'
+      'feature-two-img feature-two-text'
+      'feature-three-text feature-three-img'
+      'feature-four-img feature-four-text'
+      'feature-five-text feature-five-img'
+      'feature-six-img feature-six-text';
+  }
+
+  @include breakpoint-down(large) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 12fr;
+    grid-template-areas:
+      'feature-one-img'
+      'feature-one-text'
+      'feature-two-img'
+      'feature-two-text'
+      'feature-three-img'
+      'feature-three-text'
+      'feature-four-img'
+      'feature-four-text'
+      'feature-five-img'
+      'feature-five-text'
+      'feature-six-img'
+      'feature-six-text';
+  }
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .feature-img {
+  }
+
+  .feature-text {
+    padding: 1.875rem;
+
+    @include breakpoint-up(large) {
+      padding: 2.5rem;
+    }
+
+    h2 {
+      @include breakpoint-up(large) {
+        font-size: 3rem;
+      }
+    }
+
+    p {
+      @include breakpoint-up(large) {
+        font-size: 1.125rem;
+        line-height: 1.75;
+      }
+    }
+  }
+
+  .feature-one-text {
+    background: #e8f0d3;
+    color: $green;
+    grid-area: feature-one-text;
+  }
+
+  .feature-two-text {
+    background: #e7dfed;
+    color: $purple;
+    grid-area: feature-two-text;
+  }
+
+  .feature-three-text {
+    background: #fde9d6;
+    color: $orange;
+    grid-area: feature-three-text;
+  }
+
+  .feature-four-text {
+    background: #d9f2fb;
+    color: $blue;
+    grid-area: feature-four-text;
+  }
+
+  .feature-five-text {
+    background: $grey-light;
+    color: $black;
+    grid-area: feature-five-text;
+  }
+
+  .feature-six-text {
+    background: #f6d0d1;
+    color: $cherry;
+    grid-area: feature-six-text;
+  }
+}

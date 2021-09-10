@@ -1,0 +1,94 @@
+.cards {
+  text-align: center;
+  color: white;
+
+  @include breakpoint-up(large) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 'card-purple card-orange card-green card-cherry';
+  }
+
+  .card-purple {
+    background: $purple;
+    padding: 2rem 1.875rem 2.5rem 1.875rem;
+    min-height: 29.5rem;
+
+    button {
+      color: $purple;
+      width: 100%;
+    }
+  }
+
+  .card-orange {
+    background: $orange;
+    padding: 2rem 1.875rem 2.5rem 1.875rem;
+    min-height: 29.5rem;
+
+    button {
+      color: $orange;
+      width: 100%;
+    }
+  }
+
+  .card-green {
+    background: $green;
+    padding: 2rem 1.875rem 2.5rem 1.875rem;
+    min-height: 29.5rem;
+
+    p {
+      font-weight: normal;
+      margin-bottom: 1.5rem;
+    }
+
+    button {
+      color: $green;
+      width: 100%;
+    }
+
+    .card-links {
+      text-align: left;
+
+      a {
+        margin-bottom: 1.25rem;
+        font-size: 1rem;
+      }
+
+      img {
+        margin-right: 1.125rem;
+      }
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      color: white;
+      font-weight: 600;
+    }
+  }
+
+  .card-cherry {
+    background: $cherry;
+    padding: 2rem 1.875rem 2.5rem 1.875rem;
+    min-height: 29.5rem;
+
+    .card-info {
+      margin-top: 2rem;
+
+      span {
+        font-size: 3.125rem;
+        font-weight: 600;
+      }
+    }
+
+    button {
+      color: $cherry;
+    }
+  }
+}

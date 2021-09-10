@@ -1,0 +1,66 @@
+.share {
+  @include breakpoint-up(large) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      'share-heading share-heading share-heading share-heading share-heading'
+      'share-btn-1 share-btn-2 share-btn-3 share-btn-4 share-btn-5';
+  }
+
+  .share-heading {
+    color: $cherry;
+    text-align: center;
+    margin-top: 6.375rem;
+
+    @include breakpoint-up(large) {
+      grid-area: share-heading;
+    }
+  }
+
+  a {
+    padding: 1.25rem 0;
+    text-align: center;
+    transition: ease-in-out 300ms;
+  }
+
+  .share-btn-1 {
+    background: $green;
+
+    &:hover {
+      background: #a4c450;
+    }
+  }
+
+  .share-btn-2 {
+    background: $purple;
+
+    &:hover {
+      background: #a181b8;
+    }
+  }
+
+  .share-btn-3 {
+    background: $orange;
+
+    &:hover {
+      background: #f5a95b;
+    }
+  }
+
+  .share-btn-4 {
+    background: $blue;
+
+    &:hover {
+      background: #67ccf1;
+    }
+  }
+
+  .share-btn-5 {
+    background: $black;
+
+    &:hover {
+      background: #6e6e6e;
+    }
+  }
+}

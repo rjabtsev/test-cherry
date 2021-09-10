@@ -1,0 +1,114 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+
+  &-j-b {
+    justify-content: space-between;
+  }
+
+  &-j-c {
+    justify-content: center;
+  }
+
+  &-a-c {
+    align-items: center;
+  }
+
+  &-col {
+    flex-direction: column;
+  }
+
+  &-col-rev {
+    flex-direction: column-reverse;
+  }
+}
+
+// Container
+
+.container {
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Buttons
+
+.btn-white {
+  font-size: 1rem;
+  font-weight: 400;
+  background: white;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  padding: 0.5rem 2.5rem;
+
+  &:hover {
+    background: #eeeeee;
+    transition: ease-in-out 200ms;
+  }
+}
+
+.btn-cherry {
+  font-size: 1rem;
+  font-weight: 400;
+  background: $cherry;
+  color: white;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  padding: 0.5rem 2.5rem;
+
+  &:hover {
+    background: #a32629;
+    transition: ease-in-out 200ms;
+  }
+}
+
+.btn-lang {
+  background: $cherry;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+}
+
+// Visability
+
+.hide-f-m {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-f-d {
+  @include breakpoint-up(medium) {
+    display: none;
+  }
+}

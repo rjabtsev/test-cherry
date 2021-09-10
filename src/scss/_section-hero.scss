@@ -1,0 +1,217 @@
+.hero {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+
+  @include breakpoint-down(large) {
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+
+  .carousel-container {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+
+    .carousel-img {
+      height: 100%;
+      width: 100%;
+
+      &:first-child {
+        background: linear-gradient(
+            0deg,
+            rgba(212, 18, 23, 0.3),
+            rgba(212, 18, 23, 0.3)
+          ),
+          url('../img/hero-1.jpg') no-repeat center;
+        background-blend-mode: multiply, normal;
+        background-size: cover;
+      }
+
+      &:nth-child(2) {
+        background: black;
+      }
+
+      &:nth-child(3) {
+        background: url('../img/hero-3.jpg') no-repeat center;
+        background-size: cover;
+      }
+
+      &:nth-child(4) {
+        background: url('../img/hero-4.jpg') no-repeat center;
+        background-size: cover;
+      }
+
+      &:nth-child(5) {
+        background: url('../img/hero-5.jpg') no-repeat center;
+        background-size: cover;
+      }
+    }
+  }
+
+  .carousel-nav {
+    position: absolute;
+    bottom: 2rem;
+    z-index: 15;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include breakpoint-down(large) {
+      bottom: 0.7rem;
+    }
+
+    .carousel-dot {
+      background-image: url('../img/dot-inactive.svg');
+      background-size: cover;
+      height: 1rem;
+      width: 1rem;
+      margin: 0 0.75rem;
+      cursor: pointer;
+      border-radius: 50%;
+
+      @include breakpoint-down(large) {
+        height: 0.625rem;
+        width: 0.625rem;
+      }
+    }
+  }
+
+  .first-active {
+    margin-left: 0;
+  }
+
+  .second-active {
+    margin-left: -100%;
+  }
+
+  .third-active {
+    margin-left: -200%;
+  }
+
+  .fourth-active {
+    margin-left: -300%;
+  }
+
+  .fifth-active {
+    margin-left: -400%;
+  }
+
+  .first-current #dot-1 {
+    background: white;
+  }
+
+  .second-current #dot-2 {
+    background: white;
+  }
+
+  .third-current #dot-3 {
+    background: white;
+  }
+
+  .fourth-current #dot-4 {
+    background: white;
+  }
+
+  .fifth-current #dot-5 {
+    background: white;
+  }
+}
+
+.first-slide-text {
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  font-size: 6.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  color: white;
+  max-width: 45%;
+  text-align: center;
+
+  @include breakpoint-down(large) {
+    font-size: 2rem;
+    max-width: 70%;
+  }
+}
+
+.play-button {
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+  }
+}
+
+.carousel-video {
+  position: relative;
+  overflow: hidden;
+
+  .carousel-video-file {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .progress-bar {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #c8c8ca;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    height: 0.75rem;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 70%;
+
+    @include breakpoint-down(large) {
+      bottom: 15%;
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 1.75rem;
+      width: 1.75rem;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+      background: rgba(212, 18, 23, 0.7);
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+    }
+
+    &::-moz-range-thumb {
+      -webkit-appearance: none;
+      height: 1.75rem;
+      width: 1.75rem;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+      background: rgba(212, 18, 23, 0.7);
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+    }
+
+    &::-ms-thumb {
+      -webkit-appearance: none;
+      height: 1.75rem;
+      width: 1.75rem;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+      background: rgba(212, 18, 23, 0.7);
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
